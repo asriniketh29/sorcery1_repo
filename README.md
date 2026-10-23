@@ -146,7 +146,31 @@ $ python3 runtimes.py --max_x=22
 ```
 and copy/paste the resulting table into this README file below this line.
 
-<!-- add the table here -->
+| len(xs) | timsort | merge_sorted | quick_sorted |
+|   ---   |   ---   |      ---     |      ---     |
+|  2**0  |  2.60e-06  |  2.59e-06  |  1.82e-06  |
+|  2**1  |  2.34e-06  |  7.70e-06  |  9.29e-06  |
+|  2**2  |  1.13e-06  |  7.42e-06  |  7.53e-06  |
+|  2**3  |  1.38e-06  |  1.19e-05  |  9.48e-06  |
+|  2**4  |  1.79e-06  |  2.16e-05  |  1.84e-05  |
+|  2**5  |  2.54e-06  |  4.26e-05  |  3.85e-05  |
+|  2**6  |  6.07e-06  |  9.29e-05  |  7.19e-05  |
+|  2**7  |  9.99e-06  |  2.00e-04  |  1.70e-04  |
+|  2**8  |  2.16e-05  |  4.26e-04  |  3.28e-04  |
+|  2**9  |  4.42e-05  |  9.18e-04  |  7.19e-04  |
+|  2**10  |  9.13e-05  |  2.00e-03  |  1.54e-03  |
+|  2**11  |  2.04e-04  |  4.31e-03  |  3.37e-03  |
+|  2**12  |  4.26e-04  |  9.33e-03  |  7.30e-03  |
+|  2**13  |  9.30e-04  |  1.98e-02  |  1.44e-02  |
+|  2**14  |  2.02e-03  |  4.39e-02  |  3.10e-02  |
+|  2**15  |  4.50e-03  |  9.09e-02  |  6.68e-02  |
+|  2**16  |  9.79e-03  |  2.02e-01  |  1.41e-01  |
+|  2**17  |  2.14e-02  |  4.18e-01  |  2.99e-01  |
+|  2**18  |  4.63e-02  |  9.46e-01  |  6.34e-01  |
+|  2**19  |  1.07e-01  |  1.98e+00  |  1.46e+00  |
+|  2**20  |  2.49e-01  |  4.24e+00  |  3.32e+00  |
+|  2**21  |  5.92e-01  |  9.33e+00  |  7.30e+00  |
+|  2**22  |  1.26e+00  |  1.97e+01  |  1.57e+01  |
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$ ),
@@ -245,31 +269,6 @@ Follow the instructions in the comments to provide a proper definition of `xs`,
 then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
-| len(xs) | timsort | merge_sorted | quick_sorted |
-|   ---   |   ---   |      ---     |      ---     |
-|  2**0  |  2.60e-06  |  2.59e-06  |  1.82e-06  |
-|  2**1  |  2.34e-06  |  7.70e-06  |  9.29e-06  |
-|  2**2  |  1.13e-06  |  7.42e-06  |  7.53e-06  |
-|  2**3  |  1.38e-06  |  1.19e-05  |  9.48e-06  |
-|  2**4  |  1.79e-06  |  2.16e-05  |  1.84e-05  |
-|  2**5  |  2.54e-06  |  4.26e-05  |  3.85e-05  |
-|  2**6  |  6.07e-06  |  9.29e-05  |  7.19e-05  |
-|  2**7  |  9.99e-06  |  2.00e-04  |  1.70e-04  |
-|  2**8  |  2.16e-05  |  4.26e-04  |  3.28e-04  |
-|  2**9  |  4.42e-05  |  9.18e-04  |  7.19e-04  |
-|  2**10  |  9.13e-05  |  2.00e-03  |  1.54e-03  |
-|  2**11  |  2.04e-04  |  4.31e-03  |  3.37e-03  |
-|  2**12  |  4.26e-04  |  9.33e-03  |  7.30e-03  |
-|  2**13  |  9.30e-04  |  1.98e-02  |  1.44e-02  |
-|  2**14  |  2.02e-03  |  4.39e-02  |  3.10e-02  |
-|  2**15  |  4.50e-03  |  9.09e-02  |  6.68e-02  |
-|  2**16  |  9.79e-03  |  2.02e-01  |  1.41e-01  |
-|  2**17  |  2.14e-02  |  4.18e-01  |  2.99e-01  |
-|  2**18  |  4.63e-02  |  9.46e-01  |  6.34e-01  |
-|  2**19  |  1.07e-01  |  1.98e+00  |  1.46e+00  |
-|  2**20  |  2.49e-01  |  4.24e+00  |  3.32e+00  |
-|  2**21  |  5.92e-01  |  9.33e+00  |  7.30e+00  |
-|  2**22  |  1.26e+00  |  1.97e+01  |  1.57e+01  |
 
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
